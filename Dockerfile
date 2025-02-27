@@ -1,5 +1,5 @@
 FROM rust:latest
-WORKDIR /usr/src/fibbit
+WORKDIR /usr/src/fibbot
 COPY . .
 RUN cargo build --release
-ENTRYPOINT ["./target/release/fibbot"]
+ENTRYPOINT ["/usr/src/fibbot/target/release/fibbot"]
