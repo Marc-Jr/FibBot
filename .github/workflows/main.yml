@@ -10,4 +10,4 @@ name: FibBot Workflow
              uses: ./fibbot
              with:
                enable_fib: 'true'
-               max_threshold: '1000'
+               max_threshold: '100'
