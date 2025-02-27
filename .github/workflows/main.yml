@@ -1,0 +1,13 @@
+name: FibBot Workflow
+     on: [pull_request]
+     jobs:
+       fibbot:
+         runs-on: ubuntu-latest
+         steps:
+           - name: Checkout code
+             uses: actions/checkout@v2
+           - name: Run FibBot
+             uses: ./fibbot
+             with:
+               enable_fib: 'true'
+               max_threshold: '1000'

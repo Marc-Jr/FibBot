@@ -1,0 +1,14 @@
+name: 'FibBot'
+     description: 'A GitHub Action to calculate Fibonacci numbers from PR content.'
+     runs:
+       using: 'docker'
+       image: 'Dockerfile'
+     inputs:
+       enable_fib:
+         description: 'Enable Fibonacci calculation'
+         required: true
+         default: 'true'
+       max_threshold:
+         description: 'Maximum threshold for Fibonacci calculation'
+         required: true
+         default: '1000'
