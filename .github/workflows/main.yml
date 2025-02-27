@@ -1,5 +1,5 @@
 name: FibBot Workflow
-on: [pull_request]
+on: [push]
 jobs:
      fibbot:
           runs-on: ubuntu-latest
