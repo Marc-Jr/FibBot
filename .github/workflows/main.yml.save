@@ -1,10 +1,10 @@
- name: FibBot Workflow
-     on: [pull_request]
-     jobs:
-       fibbot:
-         runs-on: ubuntu-latest
-         steps:
-           - name: Checkout code
+name: FibBot Workflow
+on: [pull_request]
+jobs:
+     fibbot:
+          runs-on: ubuntu-latest
+          steps:
+           - name: Checkout Repository
              uses: actions/checkout@v2
            - name: Run FibBot
              uses: ./fibbot
