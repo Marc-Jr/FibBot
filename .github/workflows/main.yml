@@ -4,10 +4,10 @@ jobs:
      fibbot:
           runs-on: ubuntu-latest
           steps:
-           - name: Checkout code
+           - name: Checkout Repository
              uses: actions/checkout@v2
            - name: Run FibBot
              uses: ./fibbot
              with:
                enable_fib: 'true'
-               max_threshold: '100'
+               max_threshold: '1000'
